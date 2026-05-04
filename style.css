@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  margin: 0;
+  background: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f') no-repeat center/cover;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+.container {
+  width: 360px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats div {
+  background: rgba(0,0,0,0.5);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.list {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.item {
+  background: rgba(0,0,0,0.5);
+  margin: 5px 0;
+  padding: 6px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+.delete {
+  color: red;
+  cursor: pointer;
+}
+
+canvas {
+  margin-top: 10px;
+}
